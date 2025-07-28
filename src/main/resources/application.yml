@@ -32,7 +32,12 @@ spring:
       enabled: true
       file-size-threshold: 2KB
       max-file-size: 20MB
-      max-request-size: 25MBasource:
+      max-request-size: 25MB
+
+# File Storage Configuration
+file:
+  upload-dir: ./uploads
+  max-size: 20971520  # 20MB in bytes
     url: jdbc:mysql://localhost:3306/lms_db?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC
     username: root
     password: Jhansi@2003
